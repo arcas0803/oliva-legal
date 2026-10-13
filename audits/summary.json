@@ -1,0 +1,578 @@
+{
+  "url": "http://127.0.0.1:4377/",
+  "createdAt": "2026-10-13T15:37:47.364Z",
+  "expectedNoindex": true,
+  "profiles": {
+    "mobile": {
+      "routeResources": [
+        {
+          "scope": "Resources observed during this navigation; transfer includes headers, inline JS belongs to Document, cached zero bytes are not absence.",
+          "groups": {
+            "Document": {
+              "requests": 1,
+              "transferBytes": 5585,
+              "decodedBytes": 14325
+            },
+            "Stylesheet": {
+              "requests": 1,
+              "transferBytes": 5408,
+              "decodedBytes": 18298
+            },
+            "Image": {
+              "requests": 1,
+              "transferBytes": 65748,
+              "decodedBytes": 65480
+            },
+            "Font": {
+              "requests": 3,
+              "transferBytes": 73748,
+              "decodedBytes": 72788
+            },
+            "Other": {
+              "requests": 1,
+              "transferBytes": 495,
+              "decodedBytes": 228
+            }
+          }
+        },
+        {
+          "scope": "Resources observed during this navigation; transfer includes headers, inline JS belongs to Document, cached zero bytes are not absence.",
+          "groups": {
+            "Document": {
+              "requests": 1,
+              "transferBytes": 5585,
+              "decodedBytes": 14325
+            },
+            "Stylesheet": {
+              "requests": 1,
+              "transferBytes": 5408,
+              "decodedBytes": 18298
+            },
+            "Image": {
+              "requests": 1,
+              "transferBytes": 65748,
+              "decodedBytes": 65480
+            },
+            "Font": {
+              "requests": 3,
+              "transferBytes": 73748,
+              "decodedBytes": 72788
+            },
+            "Other": {
+              "requests": 1,
+              "transferBytes": 495,
+              "decodedBytes": 228
+            }
+          }
+        },
+        {
+          "scope": "Resources observed during this navigation; transfer includes headers, inline JS belongs to Document, cached zero bytes are not absence.",
+          "groups": {
+            "Document": {
+              "requests": 1,
+              "transferBytes": 5585,
+              "decodedBytes": 14325
+            },
+            "Stylesheet": {
+              "requests": 1,
+              "transferBytes": 5408,
+              "decodedBytes": 18298
+            },
+            "Image": {
+              "requests": 1,
+              "transferBytes": 65748,
+              "decodedBytes": 65480
+            },
+            "Font": {
+              "requests": 3,
+              "transferBytes": 73748,
+              "decodedBytes": 72788
+            },
+            "Other": {
+              "requests": 1,
+              "transferBytes": 495,
+              "decodedBytes": 228
+            }
+          }
+        }
+      ],
+      "runCount": 3,
+      "lighthouseVersion": "13.5.0",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+      "settings": {
+        "output": "json",
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "median": 1354.2591000000002,
+          "min": 1353.0726,
+          "max": 1357.5375000000001
+        },
+        "largest-contentful-paint": {
+          "median": 1802.8394000000003,
+          "min": 1802.0484,
+          "max": 1955.025
+        },
+        "cumulative-layout-shift": {
+          "median": 0.003042798145003804,
+          "min": 0.003042798145003804,
+          "max": 0.003042798145003804
+        },
+        "total-blocking-time": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "speed-index": {
+          "median": 1354.2591000000002,
+          "min": 1353.0726,
+          "max": 1357.5375000000001
+        }
+      },
+      "scores": {
+        "performance": {
+          "median": 99,
+          "min": 99,
+          "max": 99
+        },
+        "accessibility": {
+          "median": 100,
+          "min": 100,
+          "max": 100
+        },
+        "best-practices": {
+          "median": 100,
+          "min": 100,
+          "max": 100
+        },
+        "seo": {
+          "median": 63,
+          "min": 63,
+          "max": 63
+        }
+      },
+      "failures": [
+        {
+          "run": 1,
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.98,
+          "mode": "numeric",
+          "expected": false
+        },
+        {
+          "run": 1,
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.97,
+          "mode": "numeric",
+          "expected": false
+        },
+        {
+          "run": 1,
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.99,
+          "mode": "numeric",
+          "expected": false
+        },
+        {
+          "run": 1,
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "score": 0,
+          "mode": "binary",
+          "expected": true
+        },
+        {
+          "run": 1,
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "mode": "numeric",
+          "expected": false
+        },
+        {
+          "run": 2,
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.98,
+          "mode": "numeric",
+          "expected": false
+        },
+        {
+          "run": 2,
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.98,
+          "mode": "numeric",
+          "expected": false
+        },
+        {
+          "run": 2,
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "score": 0,
+          "mode": "binary",
+          "expected": true
+        },
+        {
+          "run": 2,
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "mode": "numeric",
+          "expected": false
+        },
+        {
+          "run": 3,
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.98,
+          "mode": "numeric",
+          "expected": false
+        },
+        {
+          "run": 3,
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.98,
+          "mode": "numeric",
+          "expected": false
+        },
+        {
+          "run": 3,
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "score": 0,
+          "mode": "binary",
+          "expected": true
+        },
+        {
+          "run": 3,
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "mode": "numeric",
+          "expected": false
+        }
+      ]
+    },
+    "desktop": {
+      "routeResources": [
+        {
+          "scope": "Resources observed during this navigation; transfer includes headers, inline JS belongs to Document, cached zero bytes are not absence.",
+          "groups": {
+            "Document": {
+              "requests": 1,
+              "transferBytes": 5585,
+              "decodedBytes": 14325
+            },
+            "Stylesheet": {
+              "requests": 1,
+              "transferBytes": 5408,
+              "decodedBytes": 18298
+            },
+            "Image": {
+              "requests": 1,
+              "transferBytes": 36184,
+              "decodedBytes": 35916
+            },
+            "Font": {
+              "requests": 3,
+              "transferBytes": 73748,
+              "decodedBytes": 72788
+            },
+            "Other": {
+              "requests": 1,
+              "transferBytes": 495,
+              "decodedBytes": 228
+            }
+          }
+        },
+        {
+          "scope": "Resources observed during this navigation; transfer includes headers, inline JS belongs to Document, cached zero bytes are not absence.",
+          "groups": {
+            "Document": {
+              "requests": 1,
+              "transferBytes": 5585,
+              "decodedBytes": 14325
+            },
+            "Stylesheet": {
+              "requests": 1,
+              "transferBytes": 5408,
+              "decodedBytes": 18298
+            },
+            "Image": {
+              "requests": 1,
+              "transferBytes": 36184,
+              "decodedBytes": 35916
+            },
+            "Font": {
+              "requests": 3,
+              "transferBytes": 73748,
+              "decodedBytes": 72788
+            },
+            "Other": {
+              "requests": 1,
+              "transferBytes": 495,
+              "decodedBytes": 228
+            }
+          }
+        },
+        {
+          "scope": "Resources observed during this navigation; transfer includes headers, inline JS belongs to Document, cached zero bytes are not absence.",
+          "groups": {
+            "Document": {
+              "requests": 1,
+              "transferBytes": 5585,
+              "decodedBytes": 14325
+            },
+            "Stylesheet": {
+              "requests": 1,
+              "transferBytes": 5408,
+              "decodedBytes": 18298
+            },
+            "Image": {
+              "requests": 1,
+              "transferBytes": 36184,
+              "decodedBytes": 35916
+            },
+            "Font": {
+              "requests": 3,
+              "transferBytes": 73748,
+              "decodedBytes": 72788
+            },
+            "Other": {
+              "requests": 1,
+              "transferBytes": 495,
+              "decodedBytes": 228
+            }
+          }
+        }
+      ],
+      "runCount": 3,
+      "lighthouseVersion": "13.5.0",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+      "settings": {
+        "output": "json",
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "desktop",
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "median": 323.15434999999997,
+          "min": 322.8764,
+          "max": 324.89914999999996
+        },
+        "largest-contentful-paint": {
+          "median": 363.15434999999997,
+          "min": 362.8764,
+          "max": 364.89914999999996
+        },
+        "cumulative-layout-shift": {
+          "median": 0.002311740468002136,
+          "min": 0.002311740468002136,
+          "max": 0.0027697956780954242
+        },
+        "total-blocking-time": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "speed-index": {
+          "median": 323.15434999999997,
+          "min": 322.8764,
+          "max": 324.89914999999996
+        }
+      },
+      "scores": {
+        "performance": {
+          "median": 100,
+          "min": 100,
+          "max": 100
+        },
+        "accessibility": {
+          "median": 100,
+          "min": 100,
+          "max": 100
+        },
+        "best-practices": {
+          "median": 100,
+          "min": 100,
+          "max": 100
+        },
+        "seo": {
+          "median": 63,
+          "min": 63,
+          "max": 63
+        }
+      },
+      "failures": [
+        {
+          "run": 1,
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "score": 0,
+          "mode": "binary",
+          "expected": true
+        },
+        {
+          "run": 1,
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "mode": "numeric",
+          "expected": false
+        },
+        {
+          "run": 2,
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "score": 0,
+          "mode": "binary",
+          "expected": true
+        },
+        {
+          "run": 2,
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "mode": "numeric",
+          "expected": false
+        },
+        {
+          "run": 3,
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "score": 0,
+          "mode": "binary",
+          "expected": true
+        },
+        {
+          "run": 3,
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "mode": "numeric",
+          "expected": false
+        }
+      ]
+    }
+  },
+  "buildResources": {
+    "jsGzipBytes": 961,
+    "cssGzipBytes": 5095,
+    "scope": "Conservative sum of all built JS/CSS files and executable inline scripts/styles, gzip per block. Not initial network transfer; third parties excluded."
+  },
+  "field": {
+    "LCP": "unavailable",
+    "INP": "unavailable",
+    "CLS": "unavailable",
+    "note": "Synthetic audit. Field p75 and actual conversion/retention require real user data."
+  }
+}

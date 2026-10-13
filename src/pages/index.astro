@@ -1,0 +1,562 @@
+---
+import '../styles/global.css';
+import '@fontsource/eb-garamond/latin-400.css';
+import '@fontsource/eb-garamond/latin-400-italic.css';
+import '@fontsource/lato/latin-400.css';
+import { Image } from 'astro:assets';
+import office from '../../public/images/office.jpg';
+const base = import.meta.env.BASE_URL;
+const areas = [
+  {
+    n: '01',
+    title: 'Personas y familias',
+    text: 'Decisiones que importan. Acompañamiento en asuntos de familia, sucesiones y protección del patrimonio.',
+    tags: 'Familia · Herencias · Patrimonio',
+  },
+  {
+    n: '02',
+    title: 'Empresa y negocio',
+    text: 'Un criterio jurídico que entiende tu negocio. Contratos, relaciones societarias y prevención de conflictos.',
+    tags: 'Mercantil · Contratos · Sociedades',
+  },
+  {
+    n: '03',
+    title: 'Trabajo y relaciones laborales',
+    text: 'Claridad para afrontar una nueva etapa. Orientación para profesionales y empresas en sus relaciones laborales.',
+    tags: 'Laboral · Negociación · Acuerdos',
+  },
+  {
+    n: '04',
+    title: 'Conflictos y reclamaciones',
+    text: 'Estudiamos cada vía para defender tus intereses, desde la negociación hasta el procedimiento judicial.',
+    tags: 'Civil · Mediación · Litigación',
+  },
+];
+const faqs = [
+  [
+    '¿Cómo es la primera conversación?',
+    'Es un espacio para escuchar tu situación, identificar el área jurídica y explicar qué información sería necesaria para estudiarla. En un despacho real, las condiciones de esa consulta se confirmarían antes de reservar.',
+  ],
+  [
+    '¿Cómo se determina el presupuesto?',
+    'El alcance, la complejidad y las actuaciones necesarias determinan la propuesta de honorarios. La contratación de un servicio requiere un presupuesto y unas condiciones acordadas previamente.',
+  ],
+  [
+    '¿Puedo consultar un asunto a distancia?',
+    'La propuesta contempla reuniones tanto presenciales como por videollamada. El canal y la documentación necesaria se acordarían al confirmar la cita.',
+  ],
+  [
+    '¿Se envían los datos de este formulario?',
+    'No. Este sitio es un proyecto de portfolio. El formulario valida los campos en tu navegador y muestra una confirmación de prueba; no envía, almacena ni comparte tus datos. Utiliza datos ficticios.',
+  ],
+];
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Oliva Legal: concepto de despacho de abogados. Una landing editorial sobre asesoramiento a personas y empresas, creada como proyecto de portfolio."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#29382c" />
+    <meta property="og:title" content="Oliva Legal · El derecho, de tu lado" />
+    <meta
+      property="og:description"
+      content="Un concepto de despacho cercano, con una mirada clara y un criterio firme. Proyecto de portfolio."
+    />
+    <meta property="og:type" content="website" />
+    <title>Oliva Legal · Abogados para personas y empresas</title>
+    <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
+  </head>
+  <body>
+    <a class="skip" href="#contenido">
+      Saltar al contenido
+    </a>
+    <header class="header">
+      <a class="brand" href="#inicio">
+        <span class="brand-symbol" aria-hidden="true">
+          o<span>l</span>
+        </span>
+        <span>
+          oliva <span class="brand-sub">LEGAL</span>
+        </span>
+      </a>
+      <button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="navigation"
+      >
+        Menú <span aria-hidden="true">☰</span>
+      </button>
+      <nav id="navigation" aria-label="Navegación principal">
+        <a href="#areas">Áreas de práctica</a>
+        <a href="#despacho">El despacho</a>
+        <a href="#metodo">Cómo trabajamos</a>
+        <a class="button small" href="#contacto">
+          Hablemos <span aria-hidden="true">↗</span>
+        </a>
+      </nav>
+    </header>
+    <main id="contenido" tabindex="-1">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow light">
+            <span class="dot"></span> ABOGADOS PARA PERSONAS Y EMPRESAS
+          </p>
+          <h1 id="hero-title">
+            El derecho,
+            <br />
+            de <em>tu lado.</em>
+          </h1>
+          <p class="hero-description">
+            Hay momentos en los que necesitas más que una respuesta. Necesitas a
+            alguien que entienda lo que está en juego.
+          </p>
+          <a class="button cream" href="#contacto">
+            Hablemos de tu caso <span aria-hidden="true">↗</span>
+          </a>
+          <p class="hero-note">
+            Una mirada clara. Un criterio firme. Un trato cercano.
+          </p>
+        </div>
+        <div class="hero-visual">
+          <Image
+            src={office}
+            alt="Interior luminoso con materiales naturales y una mesa de reunión"
+            width={640}
+            height={770}
+            format="webp"
+            quality={75}
+            widths={[380, 640, 960]}
+            sizes="(max-width: 767px) 90vw, 45vw"
+            loading="eager"
+            fetchpriority="high"
+          />
+          <span class="photo-label">
+            ESPACIO PARA ESCUCHAR. TIEMPO PARA ENTENDER.
+          </span>
+          <span class="visual-monogram" aria-hidden="true">
+            ol.
+          </span>
+        </div>
+        <div class="hero-bottom">
+          <span>OLIVA LEGAL — UNA PERSPECTIVA MÁS HUMANA</span>
+          <a href="#areas">
+            Descubre el despacho <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+      </section>
+      <section class="intro section" id="despacho">
+        <p class="eyebrow">01 / EL DESPACHO</p>
+        <div>
+          <h2>
+            Cerca de ti.
+            <br />
+            <span class="muted">A la altura de tu situación.</span>
+          </h2>
+          <div class="intro-columns">
+            <p>
+              Detrás de cada asunto hay una persona, una familia o un proyecto.
+              Por eso, el punto de partida siempre es el mismo: escucharte.
+            </p>
+            <p>
+              Traducimos la complejidad jurídica en opciones comprensibles. Para
+              que puedas decidir con información, tranquilidad y una visión
+              clara del siguiente paso.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="areas section" id="areas">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">02 / ÁREAS DE PRÁCTICA</p>
+            <h2>
+              Lo que te importa,
+              <br />
+              <em>nos ocupa.</em>
+            </h2>
+          </div>
+          <p class="section-aside">
+            Una perspectiva especializada.
+            <br />
+            Una atención siempre personal.
+          </p>
+        </div>
+        <div class="area-grid">
+          {areas.map((area) => (
+            <a class="area-card" href="#contacto" data-area={area.title}>
+              <div class="card-top">
+                <span>{area.n}</span>
+                <span class="circle-arrow" aria-hidden="true">
+                  ↗
+                </span>
+              </div>
+              <h3>{area.title}</h3>
+              <p>{area.text}</p>
+              <span class="tags">{area.tags}</span>
+              <span class="sr-only">. Hablemos de tu caso.</span>
+            </a>
+          ))}
+        </div>
+      </section>
+      <section class="statement" aria-label="Nuestra filosofía">
+        <span class="statement-mark" aria-hidden="true">
+          “
+        </span>
+        <p>
+          No se trata solo de conocer la ley.
+          <br />
+          Se trata de entender
+          <br />
+          <em>lo que significa para ti.</em>
+        </p>
+        <span class="eyebrow light">EL CRITERIO OLIVA</span>
+        <svg
+          class="branch"
+          viewBox="0 0 200 280"
+          fill="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M45 275C82 203 124 126 151 10"
+            stroke="currentColor"
+            stroke-width="2"
+          />
+          <path
+            d="M66 230C16 205 5 163 13 151C48 161 69 187 66 230ZM86 192C139 187 170 158 169 139C129 142 101 160 86 192ZM105 147C66 124 57 90 66 78C92 88 109 117 105 147ZM126 104C166 94 189 61 183 49C150 58 133 78 126 104ZM141 51C112 32 111 9 116 3C134 11 145 27 141 51Z"
+            stroke="currentColor"
+            stroke-width="2"
+          />
+        </svg>
+      </section>
+      <section class="method section" id="metodo">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">03 / NUESTRA FORMA DE TRABAJAR</p>
+            <h2>
+              Las cosas claras.
+              <br />
+              <em>Desde el principio.</em>
+            </h2>
+          </div>
+          <p class="section-aside">
+            Sin lenguaje innecesariamente complejo.
+            <br />
+            Sin pasos que no entiendas.
+          </p>
+        </div>
+        <ol class="steps">
+          <li>
+            <span class="step-number">01</span>
+            <h3>Te escuchamos</h3>
+            <p>
+              Nos cuentas tu situación. Preguntamos, escuchamos y ponemos en
+              contexto lo que necesitas.
+            </p>
+          </li>
+          <li>
+            <span class="step-number">02</span>
+            <h3>Trazamos un camino</h3>
+            <p>
+              Estudiamos las opciones y definimos contigo el alcance, los pasos
+              y el presupuesto.
+            </p>
+          </li>
+          <li>
+            <span class="step-number">03</span>
+            <h3>Avanzamos contigo</h3>
+            <p>
+              Te acompañamos en cada decisión y te mantenemos al día con
+              información comprensible.
+            </p>
+          </li>
+        </ol>
+      </section>
+      <section class="faq section" id="preguntas">
+        <div>
+          <p class="eyebrow">04 / RESOLVEMOS TUS DUDAS</p>
+          <h2>
+            Antes de
+            <br />
+            <em>dar el paso.</em>
+          </h2>
+        </div>
+        <div class="faq-list">
+          {faqs.map(([q, a]) => (
+            <details>
+              <summary>
+                {q}
+                <span aria-hidden="true">+</span>
+              </summary>
+              <p>{a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+      <section class="contact section" id="contacto">
+        <div class="contact-copy">
+          <p class="eyebrow">05 / EMPECEMOS UNA CONVERSACIÓN</p>
+          <h2>
+            Tu siguiente paso
+            <br />
+            puede ser
+            <br />
+            <em>más sencillo.</em>
+          </h2>
+          <p>
+            Cuéntanos por dónde empezar. En un despacho real, esta sería la
+            primera conversación para conocer tu situación.
+          </p>
+          <div class="demo-note">
+            <span class="dot"></span>
+            <p>
+              <strong>Una experiencia de portfolio.</strong>
+              <br />
+              Oliva Legal es una marca ficticia. Prueba el formulario con datos
+              inventados: no se envía ninguna solicitud.
+            </p>
+          </div>
+        </div>
+        <div class="form-panel">
+          <form id="contact-form" novalidate>
+            <div class="field">
+              <label for="name">
+                Cómo te llamas <span aria-hidden="true">*</span>
+              </label>
+              <input
+                id="name"
+                name="name"
+                autocomplete="name"
+                required
+                maxlength="100"
+                placeholder="Tu nombre…"
+                aria-describedby="name-error"
+              />
+              <p class="field-error" id="name-error"></p>
+            </div>
+            <div class="field">
+              <label for="email">
+                Tu correo electrónico <span aria-hidden="true">*</span>
+              </label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                spellcheck="false"
+                required
+                maxlength="254"
+                placeholder="nombre@ejemplo.com…"
+                aria-describedby="email-error"
+              />
+              <p class="field-error" id="email-error"></p>
+            </div>
+            <div class="field">
+              <label for="area">
+                Qué necesitas <span class="optional">(opcional)</span>
+              </label>
+              <select id="area" name="area">
+                <option value="">Selecciona un área</option>
+                {areas.map((a) => (
+                  <option>{a.title}</option>
+                ))}
+                <option>Otro asunto</option>
+              </select>
+            </div>
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                id="consent"
+                name="consent"
+                required
+                aria-describedby="consent-error"
+              />
+              <span>
+                Entiendo que es una demostración y que mis datos no se enviarán
+                ni almacenarán.
+              </span>
+            </label>
+            <p class="field-error" id="consent-error"></p>
+            <button class="button" type="submit" disabled>
+              Probar la consulta <span aria-hidden="true">↗</span>
+            </button>
+            <p class="form-footnote">
+              * Campos obligatorios · Demostración sin envío
+            </p>
+            <p id="form-status" role="status" aria-live="polite"></p>
+            <noscript>
+              <p>
+                Para probar la validación, activa JavaScript. Este formulario no
+                envía información.
+              </p>
+            </noscript>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-top">
+        <a class="brand" href="#inicio">
+          <span class="brand-symbol" aria-hidden="true">
+            o<span>l</span>
+          </span>
+          <span>
+            oliva <span class="brand-sub">LEGAL</span>
+          </span>
+        </a>
+        <p>El derecho, de tu lado.</p>
+        <a href="#contacto">
+          Hablemos de tu caso <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <div class="footer-bottom">
+        <span>
+          © {new Date().getFullYear()} Oliva Legal · Proyecto de portfolio
+        </span>
+        <div>
+          <button data-dialog="legal">Sobre este proyecto</button>
+          <button data-dialog="privacy">Privacidad</button>
+        </div>
+      </div>
+    </footer>
+    <dialog id="legal">
+      <button class="dialog-close" aria-label="Cerrar información del proyecto">
+        ×
+      </button>
+      <p class="eyebrow">PROYECTO DE PORTFOLIO</p>
+      <h2>Un concepto de despacho.</h2>
+      <p>
+        Oliva Legal es una identidad ficticia creada para mostrar diseño y
+        desarrollo web. No representa un despacho en ejercicio ni presta
+        servicios jurídicos. Los textos son ilustrativos y no constituyen
+        asesoramiento legal.
+      </p>
+    </dialog>
+    <dialog id="privacy">
+      <button
+        class="dialog-close"
+        aria-label="Cerrar información de privacidad"
+      >
+        ×
+      </button>
+      <p class="eyebrow">PRIVACIDAD</p>
+      <h2>Una demo sin recogida de datos.</h2>
+      <p>
+        El formulario funciona exclusivamente en tu navegador. No enviamos ni
+        guardamos su contenido; tampoco incorporamos analítica ni cookies de
+        seguimiento. El proveedor de alojamiento puede procesar los datos
+        técnicos habituales de acceso. Utiliza información ficticia al probarlo.
+      </p>
+    </dialog>
+    <script>
+      document.documentElement.classList.add('enhanced');
+      const toggle = document.querySelector<HTMLButtonElement>('.menu-toggle');
+      const nav = document.querySelector<HTMLElement>('#navigation');
+      function closeMenu() {
+        toggle?.setAttribute('aria-expanded', 'false');
+        nav?.classList.remove('open');
+      }
+      toggle?.addEventListener('click', () => {
+        const open = toggle.getAttribute('aria-expanded') !== 'true';
+        toggle.setAttribute('aria-expanded', String(open));
+        nav?.classList.toggle('open', open);
+      });
+      nav
+        ?.querySelectorAll('a')
+        .forEach((a) => a.addEventListener('click', closeMenu));
+      document.addEventListener('keydown', (e) => {
+        if (
+          e.key === 'Escape' &&
+          toggle?.getAttribute('aria-expanded') === 'true'
+        ) {
+          closeMenu();
+          toggle.focus();
+        }
+      });
+      document.querySelectorAll<HTMLAnchorElement>('[data-area]').forEach((a) =>
+        a.addEventListener('click', () => {
+          const select = document.querySelector<HTMLSelectElement>('#area');
+          if (select) select.value = a.dataset.area ?? '';
+        }),
+      );
+      const form = document.querySelector<HTMLFormElement>('#contact-form');
+      const status = document.querySelector<HTMLElement>('#form-status');
+      const submit = form?.querySelector<HTMLButtonElement>(
+        'button[type=submit]',
+      );
+      if (submit) submit.disabled = false;
+      const messages: Record<string, string> = {
+        name: 'Escribe un nombre para probar la consulta.',
+        email: 'Escribe un correo válido, como nombre@ejemplo.com.',
+        consent:
+          'Marca la casilla para confirmar que entiendes la demostración.',
+      };
+      function validate(field: HTMLInputElement) {
+        const valid =
+          field.checkValidity() &&
+          (field.id !== 'name' || field.value.trim().length > 0);
+        field.setAttribute('aria-invalid', String(!valid));
+        const error = document.getElementById(field.id + '-error');
+        if (error) error.textContent = valid ? '' : messages[field.id];
+        return valid;
+      }
+      form?.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if (status) status.textContent = '';
+        const fields = ['name', 'email', 'consent'].map(
+          (id) => document.getElementById(id) as HTMLInputElement,
+        );
+        const invalid = fields.filter((f) => !validate(f));
+        if (invalid.length) {
+          invalid[0].focus();
+          if (status)
+            status.textContent = 'Revisa los campos indicados para continuar.';
+          return;
+        }
+        if (status) {
+          status.textContent =
+            'Prueba completada. No se ha enviado ninguna solicitud ni se han guardado tus datos.';
+          status.setAttribute('tabindex', '-1');
+          status.focus();
+        }
+        form.reset();
+      });
+      form?.querySelectorAll<HTMLInputElement>('input').forEach((f) =>
+        f.addEventListener('input', () => {
+          if (f.getAttribute('aria-invalid') === 'true') validate(f);
+          if (status) status.textContent = '';
+        }),
+      );
+      document
+        .querySelectorAll<HTMLButtonElement>('[data-dialog]')
+        .forEach((b) =>
+          b.addEventListener('click', () => {
+            const d = document.getElementById(
+              b.dataset.dialog ?? '',
+            ) as HTMLDialogElement;
+            d?.showModal();
+          }),
+        );
+      document.querySelectorAll<HTMLDialogElement>('dialog').forEach((d) => {
+        d.querySelector('button')?.addEventListener('click', () => d.close());
+        d.addEventListener('click', (e) => {
+          if (e.target === d) {
+            const r = d.getBoundingClientRect();
+            if (
+              e.clientX < r.left ||
+              e.clientX > r.right ||
+              e.clientY < r.top ||
+              e.clientY > r.bottom
+            )
+              d.close();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,419 @@
+{
+  "scope": "demo",
+  "gates": [
+    {
+      "id": "mobile: conditions",
+      "status": "passed",
+      "required": true,
+      "detail": "Reported form factor must match profile."
+    },
+    {
+      "id": "mobile: repetitions",
+      "status": "passed",
+      "required": true,
+      "detail": "At least 3 equivalent runs required."
+    },
+    {
+      "id": "mobile: largest-contentful-paint",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 1802.8394000000003,
+        "limit": 2500,
+        "scope": "lab"
+      }
+    },
+    {
+      "id": "mobile: cumulative-layout-shift",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 0.003042798145003804,
+        "limit": 0.1,
+        "scope": "lab"
+      }
+    },
+    {
+      "id": "mobile: total-blocking-time",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 0,
+        "limit": 200,
+        "scope": "lab"
+      }
+    },
+    {
+      "id": "mobile: performance score",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 99,
+        "note": "Score completeness; issue-level results determine accessibility/SEO acceptance."
+      }
+    },
+    {
+      "id": "mobile: accessibility score",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 100,
+        "note": "Score completeness; issue-level results determine accessibility/SEO acceptance."
+      }
+    },
+    {
+      "id": "mobile: best-practices score",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 100,
+        "note": "Score completeness; issue-level results determine accessibility/SEO acceptance."
+      }
+    },
+    {
+      "id": "mobile: seo score",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 63,
+        "note": "Score completeness; issue-level results determine accessibility/SEO acceptance."
+      }
+    },
+    {
+      "id": "mobile: audit failures",
+      "status": "passed",
+      "required": true,
+      "detail": []
+    },
+    {
+      "id": "mobile: indexation",
+      "status": "not_applicable",
+      "required": true,
+      "detail": "noindex intentionally excluded only for demos."
+    },
+    {
+      "id": "mobile: opportunities",
+      "status": "pending",
+      "required": false,
+      "detail": [
+        {
+          "run": 1,
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.98,
+          "mode": "numeric",
+          "expected": false
+        },
+        {
+          "run": 1,
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.97,
+          "mode": "numeric",
+          "expected": false
+        },
+        {
+          "run": 1,
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.99,
+          "mode": "numeric",
+          "expected": false
+        },
+        {
+          "run": 1,
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "mode": "numeric",
+          "expected": false
+        },
+        {
+          "run": 2,
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.98,
+          "mode": "numeric",
+          "expected": false
+        },
+        {
+          "run": 2,
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.98,
+          "mode": "numeric",
+          "expected": false
+        },
+        {
+          "run": 2,
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "mode": "numeric",
+          "expected": false
+        },
+        {
+          "run": 3,
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.98,
+          "mode": "numeric",
+          "expected": false
+        },
+        {
+          "run": 3,
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.98,
+          "mode": "numeric",
+          "expected": false
+        },
+        {
+          "run": 3,
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "mode": "numeric",
+          "expected": false
+        }
+      ]
+    },
+    {
+      "id": "desktop: conditions",
+      "status": "passed",
+      "required": true,
+      "detail": "Reported form factor must match profile."
+    },
+    {
+      "id": "desktop: repetitions",
+      "status": "passed",
+      "required": true,
+      "detail": "At least 3 equivalent runs required."
+    },
+    {
+      "id": "desktop: largest-contentful-paint",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 363.15434999999997,
+        "limit": 2500,
+        "scope": "lab"
+      }
+    },
+    {
+      "id": "desktop: cumulative-layout-shift",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 0.002311740468002136,
+        "limit": 0.1,
+        "scope": "lab"
+      }
+    },
+    {
+      "id": "desktop: total-blocking-time",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 0,
+        "limit": 200,
+        "scope": "lab"
+      }
+    },
+    {
+      "id": "desktop: performance score",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 100,
+        "note": "Score completeness; issue-level results determine accessibility/SEO acceptance."
+      }
+    },
+    {
+      "id": "desktop: accessibility score",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 100,
+        "note": "Score completeness; issue-level results determine accessibility/SEO acceptance."
+      }
+    },
+    {
+      "id": "desktop: best-practices score",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 100,
+        "note": "Score completeness; issue-level results determine accessibility/SEO acceptance."
+      }
+    },
+    {
+      "id": "desktop: seo score",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 63,
+        "note": "Score completeness; issue-level results determine accessibility/SEO acceptance."
+      }
+    },
+    {
+      "id": "desktop: audit failures",
+      "status": "passed",
+      "required": true,
+      "detail": []
+    },
+    {
+      "id": "desktop: indexation",
+      "status": "not_applicable",
+      "required": true,
+      "detail": "noindex intentionally excluded only for demos."
+    },
+    {
+      "id": "desktop: opportunities",
+      "status": "pending",
+      "required": false,
+      "detail": [
+        {
+          "run": 1,
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "mode": "numeric",
+          "expected": false
+        },
+        {
+          "run": 2,
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "mode": "numeric",
+          "expected": false
+        },
+        {
+          "run": 3,
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "mode": "numeric",
+          "expected": false
+        }
+      ]
+    },
+    {
+      "id": "jsGzipBytes",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 961,
+        "limit": 30720,
+        "scope": "Conservative build proxy, not route transfer."
+      }
+    },
+    {
+      "id": "cssGzipBytes",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 5095,
+        "limit": 51200,
+        "scope": "Conservative build proxy, not route transfer."
+      }
+    },
+    {
+      "id": "visual",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "status": "passed",
+        "note": "Capturas por secciones y detalle móvil revisadas, sin colisiones.",
+        "artifacts": [
+          "../docs/screenshots/320.png",
+          "../docs/screenshots/375.png",
+          "../docs/screenshots/768.png",
+          "../docs/screenshots/1440.png",
+          "../docs/screenshots/1920.png"
+        ]
+      }
+    },
+    {
+      "id": "keyboard",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "status": "passed",
+        "note": "Salto de contenido, menú Escape, foco de error y confirmación, diálogos.",
+        "artifacts": [
+          "journeys.json",
+          "../tests/landing.spec.mjs"
+        ]
+      }
+    },
+    {
+      "id": "reflow",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "status": "passed",
+        "note": "Sin overflow a 320–1920 px; cuerpo ampliado al 200%; zoom real pendiente.",
+        "artifacts": [
+          "journeys.json",
+          "../docs/screenshots/320.png"
+        ]
+      }
+    },
+    {
+      "id": "reducedMotion",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "status": "passed",
+        "note": "Scroll auto verificado con preferencia reduce y CSS sin transiciones.",
+        "artifacts": [
+          "journeys.json",
+          "../tests/landing.spec.mjs"
+        ]
+      }
+    },
+    {
+      "id": "journeys",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "status": "passed",
+        "note": "Nueve pruebas aprobadas en Chrome, incluidos estados inválido y finalización sin envío.",
+        "artifacts": [
+          "journeys.json",
+          "../docs/screenshots/form-success.png"
+        ]
+      }
+    },
+    {
+      "id": "seo",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "status": "passed",
+        "note": "DOM verificado; noindex deliberado para un concepto ficticio.",
+        "artifacts": [
+          "seo.json"
+        ]
+      }
+    },
+    {
+      "id": "field Core Web Vitals",
+      "status": "pending",
+      "required": false,
+      "detail": "Requires real-user p75 data; new demo/launch cannot prove it."
+    },
+    {
+      "id": "conversion and retention",
+      "status": "pending",
+      "required": false,
+      "detail": "Requires real leads and closed-window cohorts."
+    }
+  ],
+  "failed": 0,
+  "requiredPending": 0,
+  "noDetectedFailures": true,
+  "ready": true
+}

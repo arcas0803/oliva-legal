@@ -1,0 +1,30 @@
+{
+  "testsPassed": 9,
+  "viewports": [
+    320,
+    375,
+    768,
+    1440,
+    1920
+  ],
+  "checks": [
+    "axe WCAG tags",
+    "responsive overflow",
+    "menu open/close/Escape",
+    "skip link focus",
+    "FAQ expand",
+    "dialog Escape and focus return",
+    "area preselection",
+    "inline validation and invalid focus",
+    "confirmation focus",
+    "no POST or browser storage",
+    "no JavaScript navigation",
+    "reduced motion",
+    "enlarged body text"
+  ],
+  "remaining": [
+    "screen reader manual testing",
+    "high contrast operating system testing",
+    "field metrics"
+  ]
+}

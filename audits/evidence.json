@@ -1,0 +1,52 @@
+{
+  "visual": {
+    "status": "passed",
+    "note": "Capturas por secciones y detalle móvil revisadas, sin colisiones.",
+    "artifacts": [
+      "../docs/screenshots/320.png",
+      "../docs/screenshots/375.png",
+      "../docs/screenshots/768.png",
+      "../docs/screenshots/1440.png",
+      "../docs/screenshots/1920.png"
+    ]
+  },
+  "keyboard": {
+    "status": "passed",
+    "note": "Salto de contenido, menú Escape, foco de error y confirmación, diálogos.",
+    "artifacts": [
+      "journeys.json",
+      "../tests/landing.spec.mjs"
+    ]
+  },
+  "reflow": {
+    "status": "passed",
+    "note": "Sin overflow a 320–1920 px; cuerpo ampliado al 200%; zoom real pendiente.",
+    "artifacts": [
+      "journeys.json",
+      "../docs/screenshots/320.png"
+    ]
+  },
+  "reducedMotion": {
+    "status": "passed",
+    "note": "Scroll auto verificado con preferencia reduce y CSS sin transiciones.",
+    "artifacts": [
+      "journeys.json",
+      "../tests/landing.spec.mjs"
+    ]
+  },
+  "journeys": {
+    "status": "passed",
+    "note": "Nueve pruebas aprobadas en Chrome, incluidos estados inválido y finalización sin envío.",
+    "artifacts": [
+      "journeys.json",
+      "../docs/screenshots/form-success.png"
+    ]
+  },
+  "seo": {
+    "status": "passed",
+    "note": "DOM verificado; noindex deliberado para un concepto ficticio.",
+    "artifacts": [
+      "seo.json"
+    ]
+  }
+}
